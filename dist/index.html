@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/52b8bd8dae.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body class="px-3 bg-white">
+
+    <main class="content  font-popins container mx-auto p-4 max-w-screen-xl space-y-20 ">
+        <nav class = "p-4 flex items-center justify-between">
+            <h1 class="text-3xl font-medium">Bhu<span class="font-light">/</span>1</h1>
+            <div class = "hidden md:inline-block">
+                <ul class = "flex gap-10">
+                    <li><a class  ="text-2xl font-medium hover:text-gray-500 hover:underline-offset-8 hover:underline" href="#about">About</a></li>
+                    <li><a class = "text-2xl font-medium hover:text-gray-500 hover:underline-offset-8 hover:underline" href="#skills">Skills</a></li>
+                    <li><a class = "text-2xl font-medium hover:text-gray-500 hover:underline-offset-8 hover:underline" href="#project">Project</a></li>
+                    <li><a class = "text-2xl font-medium hover:text-gray-500 hover:underline-offset-8 hover:underline" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburgerMenu md:hidden relative">
+                <div class = "">
+                    <i class="fa-sharp fa-solid fa-bars fa-xl cursor-pointer" onclick="toggleMenu()"></i>
+                </div>
+                <div class="MenuLinks absolute bg-gray-50 p-7 hidden right-0">
+                    <ul class = "space-y-4">
+                        <li><a class  ="text-2xl font-medium hover:text-gray-500 hover:underline-offset-8 hover:underline" onclick="toggleMenu()" href="#about">About</a></li>
+                        <li><a class = "text-2xl font-medium hover:text-gray-500 hover:underline-offset-8 hover:underline" onclick="toggleMenu()" href="#skills">Skills</a></li>
+                        <li><a class = "text-2xl font-medium hover:text-gray-500 hover:underline-offset-8 hover:underline" onclick="toggleMenu()" href="#project">Project</a></li>
+                        <li><a class = "text-2xl font-medium hover:text-gray-500 hover:underline-offset-8 hover:underline" onclick="toggleMenu()" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- profile div -->
+        <div class="profile flex flex-col items-center md:flex-row md:justify-around  space-y-7 md:space-y-0 ">
+            <img class="rounded-full h-b1 w-b1 " src="./images/bhuvan.jpg" alt="My Image">
+            <div class="info text-center space-y-7">
+                <div class="">
+                        <h2 class="intro text-xl">Hello, I'm </h2>
+                        <h3 class="name text-3xl font-semibold">Bhuvan Parmar</h3>
+                        <h4 class="skill text-3xl text-gray-400 font-semibold">FullStack Developer</h4>
+                </div>
+                <div class="buttons flex gap-14">
+                    <a href="#" class="p-4 text-center flex justify-center items-center text-xl border-4 rounded-full border-black hover:border-white hover:bg-gray-700 hover:text-white ">
+                        Download CV
+                    </a>
+                    <a href="#contact" class="p-4 text-center flex justify-center items-center text-xl  rounded-full bg-gray-700 text-white  hover:border-black hover:border-4 hover:text-black hover:bg-white">
+                        Contact Info
+                    </a>
+                </div>
+
+                <div class="social flex justify-center gap-10 ">
+
+                    <a href="https://www.linkedin.com/in/bhuvan-parmar-79a58421b/" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                    </a>
+                    <a href="https://github.com/bhuone23o33" target="_blank">
+                        <i class="fa-brands fa-github fa-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- about me section -->
+        <div id="about" class="about space-y-7 flex flex-col justify-center items-center">
+            <!-- heading -->
+            <div class="heading text-center p-4">
+                <h3 class ="text-lg text-gray-400">Get to know More</h3> 
+                <h2 class = "text-4xl font-semibold">About Me</h2>
+            </div>
+            <div class="space-y-7 md:space-y-0 flex flex-col justify-center items-center md:flex-row md:gap-10">
+                <!-- photo -->
+                <img class = "rounded-xl h-200px w-200px  md:w-1/2 md:h-1/2" src="./images/emile-perron-xrVDYZRGdw4-unsplash.jpg" alt="photo">
+                <!-- education -->
+                <div class="education w-full space-y-7 md:w-1/2">
+                    <div class="cards space-y-7">
+                        <div class="experience rounded-3xl border-2 border-gray-400 p-6 flex flex-col items-center space-y-3">
+                            <div class="icon mt-6">
+                                <i class="fa-solid fa-award fa-2xl"></i>
+                            </div>
+                            <div class="info text-center space-y-2">
+                                <h1 class = "text-3xl font-semibold">Experience</h1>
+                                <p class ="text-xl text-gray-400">2+ Years</p>
+                                <p class ="text-xl text-gray-400">Frontend Development</p>
+                            </div>
+                        </div>
+        
+                        <div class="education rounded-3xl border-2 border-gray-400 p-6 flex flex-col items-center space-y-3">
+                            <div class="icon mt-6">
+                                <i class="fa-solid fa-user-graduate fa-2xl"></i>
+                            </div>
+                            <div class="info text-center space-y-2">
+                                <h1 class = "text-3xl font-semibold">Education</h1>
+                                <h3 class ="text-xl text-gray-400">BE Bachelor of Engineering</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- some information -->
+                    <div class="aboutMe text-justify text-gray-600">
+                        Greetings! I'm Bhuvan Parmar, hailing from the vibrant town of Bhiwani in Haryana. Currently pursuing my degree at Chitkara University with an anticipated graduation year of 2025, I'm a dedicated and passionate individual. My journey through the world of technology has led me to become a proficient full-stack developer. Fueled by unwavering enthusiasm, I wholeheartedly invest myself in every project, consistently delivering remarkable results. My commitment to excellence drives me to continuously expand my knowledge and skills, ensuring that I provide the best solutions. With a strong foundation and a determination to excel, I eagerly embrace opportunities to contribute positively to the ever-evolving realm of technology.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- skills -->
+        <div id="skills" class="skills space-y-7 w-full">
+            <div class="heading text-center p-4">
+                <h3 class ="text-lg text-gray-400">Explore My</h3> 
+                <h2 class = "text-4xl font-semibold">Skills</h2>
+            </div>
+
+            <div class ="space-y-7 w-full md:space-y-0 md:flex md:justify-between md:gap-10">
+                <!-- front-End Development -->
+                <div class="skillsInfo hover:border-gray-900 text-center md:w-1/2  rounded-3xl border-2 border-gray-400 p-6 flex flex-col items-center space-y-7">
+                    <h3 class ="text-xl font-medium text-gray-500">Frontend Development</h3>
+                    <ul class = "skillList space-y-7">
+                        <li class = "flex gap-3">
+                            <div class="self-start">
+                                <i class="fa-solid fa-square-check fa-xl"></i>
+                            </div>
+                            <div class="text-justify">
+                                <h3 class="text-xl font-bold">HTML</h3>
+                                <p class="text-sm text-gray-600" >Experienced</p>
+                            </div>
+                        </li>
+                        <li class = "flex gap-3">
+                            <div class="self-start">
+                                <i class="fa-solid fa-square-check fa-xl"></i>
+                            </div>
+                            <div class="text-justify">
+                                <h3 class="text-xl font-bold">CSS</h3>
+                                <p class="text-sm text-gray-600" >Intermediate</p>
+                            </div>
+                        </li>
+                        <li class = "flex gap-3">
+                            <div class="self-start">
+                                <i class="fa-solid fa-square-check fa-xl"></i>
+                            </div>
+                            <div class="text-justify">
+                                <h3 class="text-xl font-bold">JavaScript</h3>
+                                <p class="text-sm text-gray-600" >Intermediate</p>
+                            </div>
+                        </li>
+                        <li class = "flex gap-3">
+                            <div class="self-start">
+                                <i class="fa-solid fa-square-check fa-xl"></i>
+                            </div>
+                            <div class="text-justify">
+                                <h3 class="text-xl font-bold">React</h3>
+                                <p class="text-sm text-gray-600" >Intermediate</p>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- Backend Development -->
+                <div class="skillsInfo hover:border-gray-900 text-center md:w-1/2 rounded-3xl border-2 border-gray-400 p-6 flex flex-col items-center space-y-7">
+                    <h3 class ="text-xl font-medium text-gray-500">Backend Development</h3>
+                    <ul class = "skillList space-y-7">
+                        <li class = "flex gap-3">
+                            <div class="self-start">
+                                <i class="fa-solid fa-square-check fa-xl"></i>
+                            </div>
+                            <div class="text-justify">
+                                <h3 class="text-xl font-bold">NodeJs</h3>
+                                <p class="text-sm text-gray-600" >Basic</p>
+                            </div>
+                        </li>
+                        <li class = "flex gap-3">
+                            <div class="self-start">
+                                <i class="fa-solid fa-square-check fa-xl"></i>
+                            </div>
+                            <div class="text-justify">
+                                <h3 class="text-xl font-bold">Google Firebase</h3>
+                                <p class="text-sm text-gray-600" >Basic</p>
+                            </div>
+                        </li>
+                        <li class = "flex gap-3">
+                            <div class="self-start">
+                                <i class="fa-solid fa-square-check fa-xl"></i>
+                            </div>
+                            <div class="text-justify">
+                                <h3 class="text-xl font-bold">Json</h3>
+                                <p class="text-sm text-gray-600" >Intermediate</p>
+                            </div>
+                        </li>
+                        <li class = "flex gap-3">
+                            <div class="self-start">
+                                <i class="fa-solid fa-square-check fa-xl"></i>
+                            </div>
+                            <div class="text-justify">
+                                <h3 class="text-xl font-bold">Rest Api</h3>
+                                <p class="text-sm text-gray-600" >Intermediate</p>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <!-- software Development -->
+                <div class="skillsInfo hover:border-gray-900 text-center md:w-1/2  rounded-3xl border-2 border-gray-400 p-6 flex flex-col items-center space-y-7">
+                    <h3 class ="text-xl font-medium text-gray-500">Software Development</h3>
+                    <ul class = "skillList space-y-7">
+                        <li class = "flex gap-3">
+                            <div class="self-start">
+                                <i class="fa-solid fa-square-check fa-xl"></i>
+                            </div>
+                            <div class="text-justify">
+                                <h3 class="text-xl font-bold">C/C++</h3>
+                                <p class="text-sm text-gray-600" >Intermediate
+                            </div>
+                        </li>
+                        <li class = "flex gap-3">
+                            <div class="self-start">
+                                <i class="fa-solid fa-square-check fa-xl"></i>
+                            </div>
+                            <div class="text-justify">
+                                <h3 class="text-xl font-bold">JAVA</h3>
+                                <p class="text-sm text-gray-600" >Basic</p>
+                            </div>
+                        </li>
+                        <li class = "flex gap-3">
+                            <div class="self-start">
+                                <i class="fa-solid fa-square-check fa-xl"></i>
+                            </div>
+                            <div class="text-justify">
+                                <h3 class="text-xl font-bold">Python</h3>
+                                <p class="text-sm text-gray-600" >Basic</p>
+                            </div>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Projects -->
+
+        <div id="project" class="skills space-y-7 w-full">
+
+            <div class="heading text-center p-4">
+                <h3 class ="text-lg text-gray-400">Browse My Recent</h3> 
+                <h2 class = "text-4xl font-semibold">Projects</h2>
+            </div>
+            
+            <div class = "space-y-7 w-full md:space-y-0 md:flex md:justify-between md:gap-10" >
+                <!-- Project1 -->
+                <div class="project1 text-center rounded-3xl border-2 border-gray-400 p-6 flex flex-col items-center space-y-7">
+                    <div class = "projectImg rounded-md">
+                        <img class = "rounded-2xl" src="./images/HouseMart.jpg" alt="HM">
+                    </div>
+    
+                    <h2 class="text-4xl font-semibold" >HouseMart</h2>
+    
+                    <!-- buttons -->
+                    <div class="buttonLinks flex justify-between gap-5 w-full text-center">
+                        <a class ="border-2 hover:bg-gray-800 hover:border-none hover:text-white text-center   font-semibold border-gray-400 p-3 w-1/2 rounded-full" target="_blank" href="https://github.com/bhuone23o33/HouseMart">
+                            Github
+                        </a>
+                        <a class ="border-2 hover:bg-gray-800 hover:border-none hover:text-white text-center font-semibold border-gray-400 p-3 w-1/2 rounded-full" target="_blank" href="https://house-marketing-theta.vercel.app/">
+                            Live Demo
+                        </a>
+    
+                    </div>
+                </div>
+    
+    
+                <!-- Project2 -->
+                <div class="project1 text-center rounded-3xl border-2 border-gray-400 p-6 flex flex-col items-center space-y-7">
+                    <div class = "projectImg rounded-md">
+                        <img class = "rounded-2xl" src="./images/GitHubFinder.jpg" alt="GHF">
+                    </div>
+    
+                    <h2 class="text-4xl font-semibold" >GitHub Finder</h2>
+    
+                    <!-- buttons -->
+                    <div class="buttonLinks flex justify-between gap-5 w-full text-center">
+                        <a class ="border-2 hover:bg-gray-800 hover:border-none hover:text-white text-center   font-semibold border-gray-400 p-3 w-1/2 rounded-full" target="_blank" href="https://github.com/bhuone23o33/GitHubFinder">
+                            Github
+                        </a>
+                        <a class ="border-2 hover:bg-gray-800 hover:border-none hover:text-white text-center font-semibold border-gray-400 p-3 w-1/2 rounded-full" target="_black" href="https://git-hub-finder-ten.vercel.app/">
+                            Live Demo
+                        </a>
+    
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+        <div id="contact" class="contactMe space-y-7 flex flex-col items-center">
+            <div class="heading text-center p-4">
+                <h3 class ="text-lg text-gray-400">Get in Touch</h3> 
+                <h2 class = "text-4xl font-semibold">Contact Me</h2>
+            </div>
+
+            <!-- emailMe/LinkedIn -->
+            <div class="text-center flex  rounded-2xl border-2 border-gray-400 p-4">
+                <div class="emailMe flex gap-2">
+                    <div class="emailIcon self-center">
+                        <i class="fa-regular fa-envelope fa-xl"></i>
+                    </div>
+                    <div class="p-2 text-lg outline-none " type="email">bhuone@gmail.com</div>
+                </div>
+
+                <div class="LinkedIN flex gap-2">
+                    <div class="LinkedInIcon self-center">
+                        <i class="fa-brands fa-linkedin fa-xl"></i>
+                    </div>
+                    <a href="https://www.linkedin.com/in/bhuvan-parmar-79a58421b/" target="_blank" class="p-2 text-lg outline-none">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="p-4 flex flex-col items-center space-y-6 bg-gray-100">
+        <ul class = "space-y-5 md:flex md:justify-around md:items-center md:space-y-0 md:w-1/2">
+            <li><a class  ="text-xl font-semibold" href="#about">About</a class  ="te"></li>
+            <li><a class = "text-xl font-semibold" href="#skills">Skills</a></li>
+            <li><a class = "text-xl font-semibold" href="#project">Project</a></li>
+            <li><a class = "text-xl font-semibold" href="#contact">Contact</a></li>
+        </ul>
+        <h3>CopyRight &copy; 2023 Bhuvan.All Right Reserved</h3>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
